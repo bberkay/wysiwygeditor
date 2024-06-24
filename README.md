@@ -1,4 +1,4 @@
-# Lightweight WYSIWYG Editor
+<h1 align="center"> Lightweight WYSIWYG Editor</h1>
 
 <a href="https://bberkay.github.io/lightweight-wysiwyg-editor/">Live Demo</a>
 
