@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple WYSIWYG Editor</title>
+    <style>
+        /* For Demo Purposes */
+        body{
+            background-color: #121212;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            padding: 1rem 3rem;
+        }
+
+        .layout{
+            section{
+                display: flex;
+
+                div.column{
+                    width: 49%;
+                    margin-right: 3%;
+                }
+            }
+
+            hr{
+                margin-top:3rem;
+                margin-bottom:1.75rem;
+                border:1px solid #1f1e1e;
+            }
+        }
+
+        [id$="-html-data"]{
+            background-color: #333;
+            border: 1px solid #474747;
+            padding: 1rem;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+            border-radius: 4px;
+            font-family: monospace;
+            position: relative;
+
+            .html-data{
+                padding-right: 2rem;
+            }
+
+            .copy-btn{
+                position:absolute;
+                top:0;
+                right:0;
+                padding: 0.5rem;
+                background-color: #474747;
+                cursor: pointer;
+
+                &:hover{
+                    filter: brightness(1.1);
+                }
+
+                &:active{
+                    filter: brightness(0.9);
+                }
+            }
+        }
+
+        footer{
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.5;
+
+            a{
+                color: #f5f5f5;
+                text-decoration: none;
+                border-bottom: 1px solid #f5f5f5;
+            }
+        }
+    </style>
+
+    <!-- Include the WYSIWYG Editor Styles -->
+    <link rel="stylesheet" href="wysiwyg.css">
+</head>
+<body>
+    <main class="layout">
+        <!-- Editor - Fixed -->
+        <section>
+            <div class = "column">
+                <h3>Editor - Fixed</h3>
+                <div id="wysiwyg-editor-fixed-example">
+                    <!-- 
+                        If there is no toolbar, the default toolbar will be displayed.
+                        You can customize the toolbar by creating a new toolbar like below:
+                        The only thing you need to do is to add the data-command and data-value attributes to the buttons.
+                    -->
+                    <!--<div class="wysiwyg-toolbar">
+                        <div class="wysiwyg-toolbar-group">
+                            <div class="wysiwyg-toolbar-dropdown">
+                                <div class="wysiwyg-toolbar-dropdown-toggle">
+                                    <span>Normal</span>
+                                </div>
+                                <div class="wysiwyg-toolbar-dropdown-content">
+                                    <button data-command="fontSize" data-value="7">Huge</button>
+                                    <button data-command="fontSize" data-value="5">Large</button>
+                                    <button data-command="fontSize" data-value="3">Normal</button>
+                                    <button data-command="fontSize" data-value="1">Small</button>
+                                </div>
+                            </div>
+                            <div class="wysiwyg-toolbar-dropdown">
+                                <div class="wysiwyg-toolbar-dropdown-toggle">
+                                    <span>Sans-Serif</span>
+                                </div>
+                                <div class="wysiwyg-toolbar-dropdown-content">
+                                    <button data-command="fontName" data-value="sans-serif" style="font-family:sans-serif;">Sans-Serif</button>
+                                    <button data-command="fontName" data-value="serif" style="font-family:serif;">Serif</button>
+                                    <button data-command="fontName" data-value="monospace" style="font-family:monospace;">Monospace</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wysiwyg-toolbar-group">
+                            <button data-command="bold" style="font-weight:bold;">B</button>
+                            <button data-command="italic" style="font-style:italic;">I</button>
+                            <button data-command="underline" style="text-decoration:underline;">U</button>
+                            <button data-command="strikeThrough" style="text-decoration:line-through;">S</button>
+                        </div>
+                    </div>-->
+                    <!-- 
+                        The editor body is where the content is displayed.
+                        You can set the initial content by adding the content inside the div 
+                        that has the class 'wysiwyg-body' like below:
+                    -->
+                    <!--
+                    <div class="wysiwyg-body">
+                        <h3>WYSIWYG Editor</h3>
+                        <p>Write something here...</p>
+                    </div>-->
+                </div>
+            </div>
+            <div class = "column">
+                <h3>HTML</h3>
+                <div id="wysiwyg-editor-fixed-example-html-data"><div class="copy-btn">Copy</div><div class="html-data"></div></div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Editor - Popover -->
+        <section>
+            <div class = "column">
+                <h3>Editor - Popover</h3>
+                <p><small>Focus on the editor to see the popover</small></p>
+
+                <!-- Like the fixed editor, you can customize the toolbar and set the initial content -->
+                <div id="wysiwyg-editor-popover-example"></div>
+            </div>
+            <div class = "column">
+                <h3>HTML</h3>
+                <p style="opacity:0;visibility:hidden"><small>Hidden Space</small></p>
+                <div id="wysiwyg-editor-popover-example-html-data"><div class="copy-btn">Copy</div><div class="html-data"></div></div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Editor - Tooltip -->
+        <section>
+            <div class = "column">
+                <h3>Editor - Tooltip</h3>
+                <p><small>Select the text to see the tooltip</small></p>
+
+                <!-- Like the fixed editor, you can customize the toolbar and set the initial content -->
+                <div id="wysiwyg-editor-tooltip-example"></div>
+            </div>
+            <div class = "column">
+                <h3>HTML</h3>
+                <p style="opacity:0;visibility:hidden"><small>Hidden Space</small></p>
+                <div id="wysiwyg-editor-tooltip-example-html-data"><div class="copy-btn">Copy</div><div class="html-data"></div></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>See source code on <a href="https://gist.github.com/bberkay/b1f8566b5b538865599e5fcb849f9db7" target="_blank">Gist</a></p>
+    </footer>
+    
+    <!-- Include the WYSIWYG Editor -->
+    <script src="wysiwyg.js"></script>
+    <script>
+        /** 
+         * Editor Fixed
+         * - The fixed editor is initialized with the fixed display mode(default)
+         * - The fixed display mode is triggered when the editor is loaded
+         */
+        const editorFixed = new WYSIWYGEditor('wysiwyg-editor-fixed-example');
+        editorFixed.init();
+
+        const htmlFixed = document.querySelector('#wysiwyg-editor-fixed-example-html-data .html-data');
+        editorFixed.onChange((data) => { htmlFixed.innerText = data });
+
+        /** 
+         * Editor Popover
+         * - The popover editor is initialized with the popover display mode
+         * - The popover display mode is triggered when the user focuses on the editor
+         * - If you have created a custom toolbar, it will be removed from the 'wysiwyg-editor-popover-example'
+         * and added to the body element itself.
+         */
+        const editorPopover = new WYSIWYGEditor('wysiwyg-editor-popover-example', DisplayMode.POPOVER);
+        editorPopover.init();
+
+        const htmlPopover = document.querySelector('#wysiwyg-editor-popover-example-html-data .html-data');
+        editorPopover.onChange((data) => { htmlPopover.innerText = data });
+
+        /** 
+         * Editor Tooltip
+         * - The tooltip editor is initialized with the tooltip display mode
+         * - The tooltip display mode is triggered when the user selects text
+         * - If you have created a custom toolbar, it will be removed from the 'wysiwyg-editor-tooltip-example'
+         * and added to the body element itself.
+         */
+        const editorTooltip = new WYSIWYGEditor('wysiwyg-editor-tooltip-example', DisplayMode.TOOLTIP);
+        editorTooltip.init();
+
+        const htmlTooltip = document.querySelector('#wysiwyg-editor-tooltip-example-html-data .html-data');
+        editorTooltip.onChange((data) => { htmlTooltip.innerText = data });
+
+        /**
+         * Public Methods
+         * - init(): Initialize the editor
+         * - getTextContent(): Get the content of the body's innerText
+         * - getHTMLContent(): Get the content of the body's innerHTML
+         * - setHTMLContent(content: string): Set the content of the body's innerHTML
+         * - setTextContent(content: string): Set the content of the body's innerText
+         * - addHTMLContent(content: string): Add content to the body's innerHTML
+         * - addTextContent(content: string): Add content to the body's innerText
+         * - addFullHTMLPage(content: string): Add full HTML page to the editor(this will be added inside the iframe tag)
+         * - clearContent(): Clear the content of the editor
+         * - onChange(callback: (data: string) => void): Listen to the changes in the editor
+         */
+    </script>    
+    <script>
+        /* For Demo Purposes */
+        document.querySelectorAll('.copy-btn').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const htmlData = btn.parentElement.querySelector('.html-data');
+                navigator.clipboard.writeText(htmlData.innerText).then(() => {
+                    btn.innerText = 'Copied';
+                    setTimeout(() => {
+                        btn.innerText = 'Copy';
+                    }, 5000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
