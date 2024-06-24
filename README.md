@@ -1,8 +1,10 @@
-<h1 align="center"> Lightweight WYSIWYG Editor</h1>
+<h1 align="center">Lightweight WYSIWYG Editor</h1>
 
 <a href="https://bberkay.github.io/lightweight-wysiwyg-editor/">Live Demo</a>
 
 A simple and lightweight WYSIWYG editor written in vanilla JavaScript. Designed to be easy to use and easy to customize.
+
+<img src="https://lh3.googleusercontent.com/fife/ALs6j_FD3S0KXNuITWL0YewP3ByQQozKO1Yl0MM9RqaDUbMFrSQP8XeQhD_YW1e6uBaeCZ6_J7sIUkDdpIEiJpZVhqS4DD5KG6ySKcXAmig8QftjCJXzftduirehAP2-shp6UMmYG5WSARmMOI0KppB_NaoUtmdSfrMJ9FmwPOz2LmfI8Io2vvUIf3WJcWS7qgT3wk2OuJu9tiiZyHk93eHbxmz_b-CUB3QMRBp9YppyE2nObop9ye2YvA1fzWrySPdADfgRkPifO42SG1-fDoji-ra6YWT6PXV5uYjPp4TEcIywFpiTK7caS6k7CBmMuOMkctrFqTn4l7dEwesnWRjbafVWdZOGp91-JzGzEKYqLmJNbIwzYZ0C4MNm0Xh5dRCiWNofiaB4zGyBb-5Cl4A7VTRmgGk2VwRqhKdl_7hAZ_ol4-G89d7EPKxhMN67J20FHn1oAjH1nIzyGsNJMD5iwpLVnaxgC-kBAaaOOyomL-RPsicrGkKGhKGbyMeA_lOn7sViBtO61tJqvoVrgD2WLkUnPhJpQf-TBYtqXbv4MlyADpYtfqL1ESfNuswD9La7zLQj9kxhYieb-l3QGzb0oNAc3yc48Q7qKNJ-jyzJ73FON-CbQtSm7w31zvBpM46wa0SttLCCbS7WXGb7l9EnF2b6kniFvD5ct-ib0bHXuCY3QZCnBPriARY8g0v26A4vdilT_VARgwEauNJvmD1FM_BZQDz84WOfiwo-O1lpwzUViDq-IzJ-5voJsMB7dg3immRqUvaCoS8A41TtJ5lthlTCw0mBAUzQjR9RM52fSVSDJ53YQmXt86gsbSfytB_ZDCRMKxZkXspqkr5P6rO0KOhHAI2FXfFiuNyTFZoE9grqDHfkuNLRvGcL-tDKqeRM8xjVHXeuELv3Wmp_YlUFYyrpSO0znWCrHbkTRYz-WjJDS0khDqJjabxZWsIHXiPEDGQXeYqm3rojEc3OSVq7JidmnK7FDJ3KYVrbCJcKzPhNpVMMjb8TxK5HzrRglVtGSCytSM2w6-owwsbllSKQL-ai44etOgp4NbCzkmIK1ZKHiEsq2BDzooAW8c1MIKH-wpOuG9Yz45jS7QbjMnKdYR85G9uUvbZeUz2LqAJfEKye5FPiv1GZHAZHsySFagN_AKXDHweD5uZW33Sh5Kf_6HnuWhxQ-Jhyi3QGZtENDo2eLQbkOFgUQdFF8E4tDpAhsi3uGFTFSUqqKyHmhqtcoh0z0EDCUoO4db2m-U4C9KBv7rxe-mtE8TkAItBmxNMRyGpNjH4rNfM9WPjRmtljNPU9fwyeyZFfV-atQ9ak1h2fM2rxHI1DVrzwEmVTNjG3c1KuUfYKyR_nrq_WBiXewKm2e663cvPUbQYTKh7Vz8XC723-eJNLTwqSZpqOe-TyH6QXVSWSnpgivM1ZdiFyo63CqnfV-Z_JZktfIDDnloqgx3noYM_MwjsQZy5VzmC9y60xolrVLlchfxT95_A2DV50nfxV-GA2u9exxbAlpBJeF4NVfVEKEFp8dffuIqSTCffzux9AjsRYiwoIyxGYWwV-_DFwFVXg4FYJ4cIQ7Pq8lsQ8UeedgqTMuamGt3-pA35wfRzVPgtKnQw8=w1280-h937">
 
 ## Features
 
@@ -137,6 +139,7 @@ attributes to the buttons. Also, default layout can be changed from the <a href=
 - Initial content can be set by adding the content inside the div that has the class `wysiwyg-body`.
 - For customizing the styles, you can add your own styles to the <a href="https://github.com/bberkay/lightweight-wysiwyg-editor/blob/main/src/wysiwyg.css">wysiwyg.css</a> file.
 
+For example:
 ```html
 <html>
     <head>
