@@ -1,2 +1,2 @@
-# simple-wysiwyg-editor
- Simple, lightweight, customizable WYSIWYG editor
+# Lightweight WYSIWYG Editor
+Simple, lightweight, customizable WYSIWYG editor
