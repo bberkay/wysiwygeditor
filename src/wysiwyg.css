@@ -10,7 +10,6 @@
     --wysiwyg-text-color: #333;
     --wysiwyg-border-color: #ccc;
     --wysiwyg-border-radius: 4px;
-    --wysiwyg-min-body-height: 100px; 
     --wysiwyg-max-body-height: 300px; /* 301px will show a scrollbar */
 }
 
@@ -156,7 +155,6 @@
     border-radius: var(--wysiwyg-border-radius);
 
     /* Scrollbar */
-    min-height: var(--wysiwyg-min-body-height);
     max-height: var(--wysiwyg-max-body-height);
     overflow: auto;
 
