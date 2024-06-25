@@ -23,27 +23,42 @@ A simple and lightweight WYSIWYG editor written in vanilla JavaScript. Designed 
 
 ## Usage
 
+#### Quick Start
+
+```html
+<html>
+    <head>
+        <!-- Include the stylesheet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bberkay/lightweight-wysiwyg-editor@main/src/wysiwyg.css">
+    </head>
+    <body>
+        <!-- Create a div element with an id -->
+        <div id="editor"></div>
+
+        <!-- Include the script -->
+        <script src="https://cdn.jsdelivr.net/gh/bberkay/lightweight-wysiwyg-editor@main/src/wysiwyg.js"></script>
+        <script>
+            // Initialize the editor
+            const editor = new WYSIWYGEditor('editor');
+            editor.init();
+        </script>
+    </body>
+</html>
+```
+
 #### Fixed Display Mode
 
 - The fixed editor is initialized with the fixed display mode(default)
 - The fixed display mode is triggered when the editor is loaded
 
 ```html
-<html>
-    <head>
-        <link rel="stylesheet" href="wysiwyg.css">
-    </head>
-    <body>
-        <!-- Without any customization -->
-        <div id="wysiwyg-editor-fixed-example"></div>
+<!-- Without any customization -->
+<div id="wysiwyg-editor-fixed-example"></div>
 
-        <script src="wysiwyg.js"></script>
-        <script>
-            const editorFixed = new WYSIWYGEditor('wysiwyg-editor-fixed-example');
-            editorFixed.init();
-        </script>
-    </body>
-</html>
+<script>
+    const editorFixed = new WYSIWYGEditor('wysiwyg-editor-fixed-example');
+    editorFixed.init();
+</script>
 ```
 
 #### Popover Display Mode
@@ -52,21 +67,13 @@ A simple and lightweight WYSIWYG editor written in vanilla JavaScript. Designed 
 - The popover display mode is triggered when the toolbar button is clicked
 
 ```html
-<html>
-    <head>
-        <link rel="stylesheet" href="wysiwyg.css">
-    </head>
-    <body>
-        <!-- Without any customization -->
-        <div id="wysiwyg-editor-popover-example"></div>
+<!-- Without any customization -->
+<div id="wysiwyg-editor-popover-example"></div>
 
-        <script src="wysiwyg.js"></script>
-        <script>
-            const editorPopover = new WYSIWYGEditor('wysiwyg-editor-popover-example', { displayMode: DisplayMode.Popover });
-            editorPopover.init();
-        </script>
-    </body>
-</html>
+<script>
+    const editorPopover = new WYSIWYGEditor('wysiwyg-editor-popover-example', { displayMode: DisplayMode.Popover });
+    editorPopover.init();
+</script>
 ```
 
 #### Tooltip Display Mode
@@ -75,21 +82,13 @@ A simple and lightweight WYSIWYG editor written in vanilla JavaScript. Designed 
 - The tooltip display mode is triggered when the toolbar button is hovered
 
 ```html
-<html>
-    <head>
-        <link rel="stylesheet" href="wysiwyg.css">
-    </head>
-    <body>
-        <!-- Without any customization -->
-        <div id="wysiwyg-editor-tooltip-example"></div>
+<!-- Without any customization -->
+<div id="wysiwyg-editor-tooltip-example"></div>
 
-        <script src="wysiwyg.js"></script>
-        <script>
-            const editorTooltip = new WYSIWYGEditor('wysiwyg-editor-tooltip-example', { displayMode: DisplayMode.Tooltip });
-            editorTooltip.init();
-        </script>
-    </body>
-</html>
+<script>
+    const editorTooltip = new WYSIWYGEditor('wysiwyg-editor-tooltip-example', { displayMode: DisplayMode.Tooltip });
+    editorTooltip.init();
+</script>
 ```
 
 #### Public Methods
@@ -150,57 +149,49 @@ attributes to the buttons. Also, default layout can be changed from the <a href=
 
 For example:
 ```html
-<html>
-    <head>
-        <link rel="stylesheet" href="wysiwyg.css">
-    </head>
-    <body>
-        <!-- With customization -->
-        <div id="wysiwyg-editor-fixed-example">
-            <div class="wysiwyg-toolbar">
-                <div class="wysiwyg-toolbar-group">
-                    <div class="wysiwyg-toolbar-dropdown">
-                        <div class="wysiwyg-toolbar-dropdown-toggle">
-                            <span>Normal</span>
-                        </div>
-                        <div class="wysiwyg-toolbar-dropdown-content">
-                            <button data-command="fontSize" data-value="7">Huge</button>
-                            <button data-command="fontSize" data-value="5">Large</button>
-                            <button data-command="fontSize" data-value="3">Normal</button>
-                            <button data-command="fontSize" data-value="1">Small</button>
-                        </div>
-                    </div>
-                    <div class="wysiwyg-toolbar-dropdown">
-                        <div class="wysiwyg-toolbar-dropdown-toggle">
-                            <span>Sans-Serif</span>
-                        </div>
-                        <div class="wysiwyg-toolbar-dropdown-content">
-                            <button data-command="fontName" data-value="sans-serif" style="font-family:sans-serif;">Sans-Serif</button>
-                            <button data-command="fontName" data-value="serif" style="font-family:serif;">Serif</button>
-                            <button data-command="fontName" data-value="monospace" style="font-family:monospace;">Monospace</button>
-                        </div>
-                    </div>
+<!-- With customization -->
+<div id="wysiwyg-editor-fixed-example">
+    <div class="wysiwyg-toolbar">
+        <div class="wysiwyg-toolbar-group">
+            <div class="wysiwyg-toolbar-dropdown">
+                <div class="wysiwyg-toolbar-dropdown-toggle">
+                    <span>Normal</span>
                 </div>
-                <div class="wysiwyg-toolbar-group">
-                    <button data-command="bold" style="font-weight:bold;">B</button>
-                    <button data-command="italic" style="font-style:italic;">I</button>
-                    <button data-command="underline" style="text-decoration:underline;">U</button>
-                    <button data-command="strikeThrough" style="text-decoration:line-through;">S</button>
+                <div class="wysiwyg-toolbar-dropdown-content">
+                    <button data-command="fontSize" data-value="7">Huge</button>
+                    <button data-command="fontSize" data-value="5">Large</button>
+                    <button data-command="fontSize" data-value="3">Normal</button>
+                    <button data-command="fontSize" data-value="1">Small</button>
                 </div>
             </div>
-            <div class="wysiwyg-body">
-                <h3>WYSIWYG Editor</h3>
-                <p>Write something here...</p>
+            <div class="wysiwyg-toolbar-dropdown">
+                <div class="wysiwyg-toolbar-dropdown-toggle">
+                    <span>Sans-Serif</span>
+                </div>
+                <div class="wysiwyg-toolbar-dropdown-content">
+                    <button data-command="fontName" data-value="sans-serif" style="font-family:sans-serif;">Sans-Serif</button>
+                    <button data-command="fontName" data-value="serif" style="font-family:serif;">Serif</button>
+                    <button data-command="fontName" data-value="monospace" style="font-family:monospace;">Monospace</button>
+                </div>
             </div>
         </div>
+        <div class="wysiwyg-toolbar-group">
+            <button data-command="bold" style="font-weight:bold;">B</button>
+            <button data-command="italic" style="font-style:italic;">I</button>
+            <button data-command="underline" style="text-decoration:underline;">U</button>
+            <button data-command="strikeThrough" style="text-decoration:line-through;">S</button>
+        </div>
+    </div>
+    <div class="wysiwyg-body">
+        <h3>WYSIWYG Editor</h3>
+        <p>Write something here...</p>
+    </div>
+</div>
 
-        <script src="wysiwyg.js"></script>
-        <script>
-            const editorTooltip = new WYSIWYGEditor('wysiwyg-editor-fixed-example', { displayMode: DisplayMode.Fixed });
-            editorTooltip.init();
-        </script>
-    </body>
-</html>
+<script>
+    const editorTooltip = new WYSIWYGEditor('wysiwyg-editor-fixed-example', { displayMode: DisplayMode.Fixed });
+    editorTooltip.init();
+</script>
 ```
 
 <hr>
