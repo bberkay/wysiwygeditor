@@ -6,28 +6,28 @@
 
 /* Basic Variables */
 :root{
-    --background-color: #f5f5f5;
-    --text-color: #333;
-    --border-color: #ccc;
-    --border-radius: 4px;
-    --min-body-height: 100px; 
-    --max-body-height: 300px; /* 301px will show a scrollbar */
+    --wysiwyg-background-color: #f5f5f5;
+    --wysiwyg-text-color: #333;
+    --wysiwyg-border-color: #ccc;
+    --wysiwyg-border-radius: 4px;
+    --wysiwyg-min-body-height: 100px; 
+    --wysiwyg-max-body-height: 300px; /* 301px will show a scrollbar */
 }
 
 /* Toolbar */
 .wysiwyg-toolbar{
-    background-color: var(--background-color);
-    border-bottom: 1px solid var(--border-color);
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    background-color: var(--wysiwyg-background-color);
+    border-bottom: 1px solid var(--wysiwyg-border-color);
+    border-radius: var(--wysiwyg-border-radius) var(--wysiwyg-border-radius) 0 0;
     margin: 0;
     padding: 5px;
     padding-bottom: 0;
     
     &.wysiwyg-toolbar--popover, &.wysiwyg-toolbar--tooltip{
         position: absolute;
-        background-color: var(--background-color);
-        border: 1px solid var(--border-color);
-        border-radius: var(--border-radius);
+        background-color: var(--wysiwyg-background-color);
+        border: 1px solid var(--wysiwyg-border-color);
+        border-radius: var(--wysiwyg-border-radius);
         box-shadow: 0 0 5px rgba(0,0,0,.1);
         padding: 5px;
         padding-bottom: 0;
@@ -43,10 +43,10 @@
         margin-right: 15px;
 
         [data-command], .wysiwyg-toolbar-dropdown-toggle{
-            background-color: var(--background-color);
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            color: var(--text-color);
+            background-color: var(--wysiwyg-background-color);
+            border: 1px solid var(--wysiwyg-border-color);
+            border-radius: var(--wysiwyg-border-radius);
+            color: var(--wysiwyg-text-color);
             cursor: pointer;
             font-size: 14px;
             line-height: 1.5;
@@ -124,19 +124,19 @@
 
             & button[data-command]{
                 margin:0;
-                border: 1px solid var(--border-color);
+                border: 1px solid var(--wysiwyg-border-color);
                 border-bottom: none;
                 border-radius: 0;
                 text-align: start;
             }
 
             & button[data-command]:first-child{
-                border-radius: var(--border-radius) var(--border-radius) 0 0;
+                border-radius: var(--wysiwyg-border-radius) var(--wysiwyg-border-radius) 0 0;
             }
 
             & button[data-command]:last-child{
-                border-bottom: 1px solid var(--border-color);
-                border-radius: 0 0 var(--border-radius) var(--border-radius);
+                border-bottom: 1px solid var(--wysiwyg-border-color);
+                border-radius: 0 0 var(--wysiwyg-border-radius) var(--wysiwyg-border-radius);
             }
         }
     }
@@ -150,14 +150,14 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     line-height: 1.5;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
+    color: var(--wysiwyg-text-color);
+    background-color: var(--wysiwyg-background-color);
+    border: 1px solid var(--wysiwyg-border-color);
+    border-radius: var(--wysiwyg-border-radius);
 
     /* Scrollbar */
-    min-height: var(--min-body-height);
-    max-height: var(--max-body-height);
+    min-height: var(--wysiwyg-min-body-height);
+    max-height: var(--wysiwyg-max-body-height);
     overflow: auto;
 
     img{
@@ -174,5 +174,5 @@
 
 .wysiwyg-toolbar + .wysiwyg-body{
     border-top: none;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border-radius: 0 0 var(--wysiwyg-border-radius) var(--wysiwyg-border-radius);
 }
