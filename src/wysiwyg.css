@@ -153,7 +153,8 @@
     background-color: var(--wysiwyg-background-color);
     border: 1px solid var(--wysiwyg-border-color);
     border-radius: var(--wysiwyg-border-radius);
-
+    resize: vertical;
+    
     /* Scrollbar */
     max-height: var(--wysiwyg-max-body-height);
     overflow: auto;
