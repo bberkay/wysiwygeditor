@@ -21,8 +21,7 @@
     "javascript"
   ],
   "files": [
-    "dist",
-    "lib/index.d.ts"
+    "dist"
   ],
   "author": "Berkay Kaya <berkaykayaforbusiness@outlook.com>",
   "license": "MIT",
