@@ -1,12 +1,13 @@
 <h1 align="center">Lightweight WYSIWYG Editor</h1>
 
-<a href="https://bberkay.github.io/lightweight-wysiwyg-editor/">Live Demo</a>
+<a href="https://wysiwygeditor.vercel.app/">Live Demo</a>
 
 ### Table of Contents
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Usage](#usage)
-4. [Customization](#customization)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Customization](#customization)
 
 ## Introduction
 
@@ -21,30 +22,42 @@ A simple and lightweight WYSIWYG editor written in vanilla JavaScript. Designed 
 - Customizable toolbar layout, buttons, and styles.
 - Drag and drop image upload, copy-paste link on selected text, and more.
 
-## Usage
+## Installation
 
-#### Quick Start
+1- Install the package via npm: `npm install @bberkay/wysiwygeditor`
+
+```js
+import { WYSIWYGEditor, DisplayMode } from '@bberkay/wysiwygeditor'
+/*
+Alternatively, you can use CommonJS syntax:
+const { WYSIWYGEditor, DisplayMode } = require('@bberkay/wysiwygeditor');
+*/
+
+document.querySelector<HTMLDivElement>('#root')!.innerHTML = `
+    <div id = "body"></div>
+`
+
+const wysiwygeditor = new WYSIWYGEditor("body");
+wysiwygeditor.init();
+```
+2- or via CDN like this: <code>https://cdn.jsdelivr.net/npm/@bberkay/wysiwygeditor@latest</code>
 
 ```html
 <html>
-    <head>
-        <!-- Include the stylesheet -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bberkay/lightweight-wysiwyg-editor@main/src/wysiwyg.css">
-    </head>
     <body>
-        <!-- Create a div element with an id -->
-        <div id="editor"></div>
+        <div id="body"></div>
 
-        <!-- Include the script -->
-        <script src="https://cdn.jsdelivr.net/gh/bberkay/lightweight-wysiwyg-editor@main/src/wysiwyg.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@bberkay/wysiwygeditor@latest"></script>
         <script>
-            // Initialize the editor
-            const editor = new WYSIWYGEditor('editor');
+            const editor = new WYSIWYGEditor('body');
             editor.init();
         </script>
     </body>
 </html>
+
 ```
+
+## Usage
 
 #### Fixed Display Mode
 
@@ -195,4 +208,4 @@ For example:
 ```
 
 <hr>
-<h5 align="center"><a href="mailto:berkaykayaforbusiness@outlook.com">berkaykayaforbusiness@outlook.com</a></h5> 
+<h5 align="center"><a href="mailto:berkaykayaforbusiness@outlook.com">berkaykayaforbusiness@outlook.com</a></h5>
