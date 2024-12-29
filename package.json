@@ -1,15 +1,15 @@
 {
   "name": "@bberkay/wysiwygeditor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple, lightweight, easy to use and easy to customize WYSIWYG Editor. ",
   "main": "dist/wysiwygeditor.umd.cjs",
   "module": "dist/wysiwygeditor.js",
-	"types": "index.d.ts",
+  "types": "dist/wysiwygeditor.d.ts",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && cp lib/index.d.ts dist/wysiwygeditor.d.ts",
     "prepublishOnly": "npm run build"
   },
-	"exports": {
+  "exports": {
     ".": {
       "import": "./dist/wysiwygeditor.js",
       "require": "./dist/wysiwygeditor.umd.cjs"
@@ -20,7 +20,10 @@
     "editor",
     "javascript"
   ],
-	"files": ["dist"],
+  "files": [
+    "dist",
+    "lib/index.d.ts"
+  ],
   "author": "Berkay Kaya <berkaykayaforbusiness@outlook.com>",
   "license": "MIT",
   "repository": {
@@ -28,7 +31,8 @@
     "url": "https://github.com/bberkay/wysiwygeditor"
   },
   "homepage": "https://github.com/bberkay/wysiwygeditor",
-	"devDependencies": {
+  "devDependencies": {
+    "rollup-plugin-copy": "^3.5.0",
     "vite": "^4.0.0",
     "vite-plugin-css-injected-by-js": "^1.0.0"
   }
