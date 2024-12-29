@@ -1,6 +1,6 @@
 {
   "name": "@bberkay/wysiwygeditor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple, lightweight, easy to use and easy to customize WYSIWYG Editor. ",
   "main": "dist/wysiwygeditor.umd.cjs",
   "module": "dist/wysiwygeditor.js",
@@ -25,9 +25,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bberkay/lightweight-wysiwyg-editor"
+    "url": "https://github.com/bberkay/wysiwygeditor"
   },
-  "homepage": "https://github.com/bberkay/lightweight-wysiwyg-editor",
+  "homepage": "https://github.com/bberkay/wysiwygeditor",
 	"devDependencies": {
     "vite": "^4.0.0",
     "vite-plugin-css-injected-by-js": "^1.0.0"
