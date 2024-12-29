@@ -75,9 +75,6 @@
             }
         }
     </style>
-
-    <!-- Include the WYSIWYG Editor Styles -->
-    <link rel="stylesheet" href="./dist/wysiwygeditor.min.css">
 </head>
 <body>
     <main class="layout">
@@ -86,7 +83,7 @@
             <div class = "column">
                 <h3>Editor - Fixed</h3>
                 <div id="wysiwyg-editor-fixed-example">
-                    <!-- 
+                    <!--
                         If there is no toolbar, the default toolbar will be displayed.
                         You can customize the toolbar by creating a new toolbar like below:
                         The only thing you need to do is to add the data-command and data-value attributes to the buttons.
@@ -122,9 +119,9 @@
                             <button data-command="strikeThrough" style="text-decoration:line-through;">S</button>
                         </div>
                     </div>-->
-                    <!-- 
+                    <!--
                         The editor body is where the content is displayed.
-                        You can set the initial content by adding the content inside the div 
+                        You can set the initial content by adding the content inside the div
                         that has the class 'wysiwyg-body' like below:
                     -->
                     <!--
@@ -176,11 +173,11 @@
             </div>
         </section>
     </main>
-    
+
     <!-- Include the WYSIWYG Editor -->
-    <script src="./dist/wysiwygeditor.min.js"></script>
+    <script src="./src/wysiwygeditor.js"></script>
     <script>
-        /** 
+        /**
          * Editor Fixed
          * - The fixed editor is initialized with the fixed display mode(default)
          * - The fixed display mode is triggered when the editor is loaded
@@ -191,7 +188,7 @@
         const htmlFixed = document.querySelector('#wysiwyg-editor-fixed-example-html-data .html-data');
         editorFixed.onChange((data) => { htmlFixed.innerText = data });
 
-        /** 
+        /**
          * Editor Popover
          * - The popover editor is initialized with the popover display mode
          * - The popover display mode is triggered when the user focuses on the editor
@@ -204,7 +201,7 @@
         const htmlPopover = document.querySelector('#wysiwyg-editor-popover-example-html-data .html-data');
         editorPopover.onChange((data) => { htmlPopover.innerText = data });
 
-        /** 
+        /**
          * Editor Tooltip
          * - The tooltip editor is initialized with the tooltip display mode
          * - The tooltip display mode is triggered when the user selects text
@@ -230,7 +227,7 @@
          * - clearContent(): Clear the content of the editor
          * - onChange(callback: (data: string) => void): Listen to the changes in the editor
          */
-    </script>    
+    </script>
     <script>
         /* For Demo Purposes */
         document.querySelectorAll('.copy-btn').forEach((btn) => {

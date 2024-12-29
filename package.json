@@ -1,25 +1,35 @@
 {
   "name": "@bberkay/wysiwygeditor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple, lightweight, easy to use and easy to customize WYSIWYG Editor. ",
-  "main": "dist/wysiwygeditor.min.js",
-	"types": "types/index.d.ts",
-  "style": "dist/wysiwygeditor.min.css",
+  "main": "dist/wysiwygeditor.umd.cjs",
+  "module": "dist/wysiwygeditor.js",
+	"types": "index.d.ts",
   "scripts": {
-    "build": "echo 'No build command defined' && exit 0",
-		"test": "echo \"No tests specified\" && exit 0"
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
+  },
+	"exports": {
+    ".": {
+      "import": "./dist/wysiwygeditor.js",
+      "require": "./dist/wysiwygeditor.umd.cjs"
+    }
   },
   "keywords": [
     "wysiwyg",
     "editor",
     "javascript"
   ],
+	"files": ["dist"],
   "author": "Berkay Kaya <berkaykayaforbusiness@outlook.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bberkay/lightweight-wysiwyg-editor"
   },
-  "homepage": "https://github.com/bberkay/lightweight-wysiwyg-editor"
+  "homepage": "https://github.com/bberkay/lightweight-wysiwyg-editor",
+	"devDependencies": {
+    "vite": "^4.0.0",
+    "vite-plugin-css-injected-by-js": "^1.0.0"
+  }
 }
-
