@@ -143,7 +143,7 @@ wysiwygeditor.init();
         <td>Add full HTML page to the editor(this will be added inside the iframe tag)</td>
     </tr>
     <tr>
-        <td>clearContent()</td>
+        <td>clear()</td>
         <td>Clear the content of the body.</td>
     </tr>
     <tr>
