@@ -21,7 +21,7 @@
     margin: 0;
     padding: 5px;
     padding-bottom: 0;
-    
+
     &.wysiwyg-toolbar--popover, &.wysiwyg-toolbar--tooltip{
         position: absolute;
         background-color: var(--wysiwyg-background-color);
@@ -70,7 +70,7 @@
             &:hover{
                 filter: brightness(95%);
             }
-        
+
             &:active{
                 filter: brightness(90%);
             }
@@ -108,7 +108,7 @@
                 position: absolute;
             }
         }
-    
+
         .wysiwyg-toolbar-dropdown-content{
             display: none;
             flex-direction: column;
@@ -154,7 +154,7 @@
     border: 1px solid var(--wysiwyg-border-color);
     border-radius: var(--wysiwyg-border-radius);
     resize: vertical;
-    
+
     /* Scrollbar */
     max-height: var(--wysiwyg-max-body-height);
     overflow: auto;
@@ -168,6 +168,22 @@
         width: 100%;
         height: 100%;
         border: none;
+    }
+
+    &.dragging {
+        opacity: 0.6;
+        position: relative;
+
+        &::after {
+            content: 'Upload';
+            pointer-events: none;
+            user-select: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+        }
     }
 }
 
