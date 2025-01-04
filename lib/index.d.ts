@@ -78,7 +78,7 @@ declare class WYSIWYGEditor {
      * @description Clear the content of the body
      * @returns {void}
      */
-    clearContent(): void;
+    clear(): void;
 
     /**
      * @description Run a function when the content changes
@@ -90,4 +90,3 @@ declare class WYSIWYGEditor {
 }
 
 export { WYSIWYGEditor, DisplayMode, DisplayModeType };
-
