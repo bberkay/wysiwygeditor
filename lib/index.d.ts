@@ -33,40 +33,6 @@ declare class WYSIWYGEditor {
     getHTMLContent(): string;
 
     /**
-     * @description Add content to the body
-     * @param {string} text The content to be added
-     * @example editor.addContent('<p>Hello World</p>');
-     * @example editor.addContent('Hello World');
-     * @returns {void}
-     */
-    addHTMLContent(text: string): void;
-
-    /**
-     * @description Add text content to the body
-     * @param {string} text The text content to be added
-     * @example editor.addTextContent('Hello World');
-     * @returns {void}
-     */
-    addTextContent(text: string): void;
-
-    /**
-     * @description Set the content of the body(override the existing content)
-     * @param {string} text The content to be set
-     * @example editor.setContent('<p>Hello World</p>');
-     * @example editor.setContent('Hello World');
-     * @returns {void}
-     */
-    setHTMLContent(text: string): void;
-
-    /**
-     * @description Set the text content of the body(override the existing content)
-     * @param {string} text The text content to be set
-     * @example editor.setTextContent('Hello World');
-     * @returns {void}
-     */
-    setTextContent(text: string): void;
-
-    /**
      * @description Add full HTML content to the body(does not override the existing content)
      * @param {string} html The full HTML content to be added
      * @example editor.addFullHTML('<html><body><p>Hello World</p></body></html>');
