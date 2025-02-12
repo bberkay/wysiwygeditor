@@ -1,7 +1,7 @@
-(function(){ try {var elementStyle = document.createElement('style'); elementStyle.appendChild(document.createTextNode(":root{--wysiwyg-background-color: #f5f5f5;--wysiwyg-text-color: #333;--wysiwyg-border-color: #ccc;--wysiwyg-border-radius: 4px;--wysiwyg-max-body-height: 300px}.wysiwyg-toolbar{background-color:var(--wysiwyg-background-color);border-bottom:1px solid var(--wysiwyg-border-color);border-radius:var(--wysiwyg-border-radius) var(--wysiwyg-border-radius) 0 0;margin:0;padding:5px 5px 0}.wysiwyg-toolbar.wysiwyg-toolbar--popover,.wysiwyg-toolbar.wysiwyg-toolbar--tooltip{position:absolute;background-color:var(--wysiwyg-background-color);border:1px solid var(--wysiwyg-border-color);border-radius:var(--wysiwyg-border-radius);box-shadow:0 0 5px #0000001a;padding:5px 5px 0;z-index:1;display:none}.wysiwyg-toolbar .wysiwyg-toolbar-group{display:inline-block;margin:0 15px 0 0;padding:0;vertical-align:middle;input[data-command]{text-align: start; cursor: text;} button[data-command]{&:hover{filter: brightness(95%);} &:active{filter: brightness(90%);} &.active{filter: brightness(90%);}}}.wysiwyg-toolbar .wysiwyg-toolbar-group [data-command],.wysiwyg-toolbar .wysiwyg-toolbar-group .wysiwyg-toolbar-dropdown-toggle{background-color:var(--wysiwyg-background-color);border:1px solid var(--wysiwyg-border-color);border-radius:var(--wysiwyg-border-radius);color:var(--wysiwyg-text-color);cursor:pointer;font-size:14px;line-height:1.5;margin:0 0 5px;padding:4px 8px;text-align:center;text-decoration:none;display:inline-block;vertical-align:middle;white-space:nowrap;-webkit-user-select:none;user-select:none;position:relative}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown{position:relative;display:inline-block}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-toggle{width:90px;text-align:start}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-toggle:hover{filter:brightness(95%)}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-toggle:active{filter:brightness(90%)}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-toggle:after{content:\"▼\";display:inline-block;margin-left:5px;font-size:11px;right:5px;top:50%;transform:translateY(-50%);position:absolute}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content{display:none;flex-direction:column;position:absolute;width:100%;z-index:1}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content.show{display:flex;z-index:2}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content button[data-command]{margin:0;border:1px solid var(--wysiwyg-border-color);border-bottom:none;border-radius:0;text-align:start}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content button[data-command]:first-child{border-radius:var(--wysiwyg-border-radius) var(--wysiwyg-border-radius) 0 0}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content button[data-command]:last-child{border-bottom:1px solid var(--wysiwyg-border-color);border-radius:0 0 var(--wysiwyg-border-radius) var(--wysiwyg-border-radius)}.wysiwyg-body{cursor:text;padding:10px;outline:none;white-space:pre-wrap;word-wrap:break-word;line-height:1.5;color:var(--wysiwyg-text-color);background-color:var(--wysiwyg-background-color);border:1px solid var(--wysiwyg-border-color);border-radius:var(--wysiwyg-border-radius);resize:vertical;max-height:var(--wysiwyg-max-body-height);overflow:auto;img{width: 100%; height: 100%;} iframe{width: 100%; height: 100%; border: none;} &.dragging {opacity: .6; position: relative; &::after {content: \"Upload\"; pointer-events: none; user-select: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 1.5em;}}}.wysiwyg-toolbar+.wysiwyg-body{border-top:none;border-radius:0 0 var(--wysiwyg-border-radius) var(--wysiwyg-border-radius)}")); document.head.appendChild(elementStyle);} catch(e) {console.error('vite-plugin-css-injected-by-js', e);} })();var p = Object.defineProperty;
-var h = (d, t, e) => t in d ? p(d, t, { enumerable: !0, configurable: !0, writable: !0, value: e }) : d[t] = e;
-var r = (d, t, e) => (h(d, typeof t != "symbol" ? t + "" : t, e), e);
-const s = {
+(function(){ try {var elementStyle = document.createElement('style'); elementStyle.appendChild(document.createTextNode(".wysiwygeditor,.wysiwyg-toolbar--popover,.wysiwyg-toolbar--tooltip{--wysiwyg-background-color: #f5f5f5;--wysiwyg-text-color: #333;--wysiwyg-border-color: #ccc;--wysiwyg-border-radius: 4px;--wysiwyg-max-body-height: 300px;all:unset}.wysiwyg-toolbar{background-color:var(--wysiwyg-background-color);border-bottom:1px solid var(--wysiwyg-border-color);border-radius:var(--wysiwyg-border-radius) var(--wysiwyg-border-radius) 0 0;border-right:2px solid var(--wysiwyg-background-color);margin:0;padding:10px 10px 0;width:100%;font-weight:400}.wysiwyg-toolbar.wysiwyg-toolbar--popover,.wysiwyg-toolbar.wysiwyg-toolbar--tooltip{position:absolute;background-color:var(--wysiwyg-background-color);border:1px solid var(--wysiwyg-border-color);border-radius:var(--wysiwyg-border-radius);box-shadow:0 0 5px #0000001a;padding:5px 5px 0;z-index:1;display:none}.wysiwyg-toolbar .wysiwyg-toolbar-group{display:inline-block;margin:0 15px 0 0;padding:0;vertical-align:middle;input[data-command]{text-align: start; cursor: text;} button[data-command]{&:hover{filter: brightness(95%);} &:active{filter: brightness(90%);} &.active{filter: brightness(90%);}}}.wysiwyg-toolbar .wysiwyg-toolbar-group [data-command],.wysiwyg-toolbar .wysiwyg-toolbar-group .wysiwyg-toolbar-dropdown-toggle{background-color:var(--wysiwyg-background-color);border:1px solid var(--wysiwyg-border-color);border-radius:var(--wysiwyg-border-radius);color:var(--wysiwyg-text-color);cursor:pointer;font-size:14px;line-height:1.5;margin:0 0 5px;padding:4px 8px;text-align:center;text-decoration:none;display:inline-block;vertical-align:middle;white-space:nowrap;-webkit-user-select:none;user-select:none;position:relative}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown{position:relative;display:inline-block}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-toggle{width:90px;text-align:start}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-toggle:hover{filter:brightness(95%)}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-toggle:active{filter:brightness(90%)}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-toggle:after{content:\"▼\";display:inline-block;margin-left:5px;font-size:11px;right:5px;top:50%;transform:translateY(-50%);position:absolute}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content{display:none;flex-direction:column;position:absolute;width:100%;z-index:1}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content.show{display:flex;z-index:2}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content button[data-command]{margin:0;border:1px solid var(--wysiwyg-border-color);border-bottom:none;border-radius:0;text-align:start}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content button[data-command]:first-child{border-radius:var(--wysiwyg-border-radius) var(--wysiwyg-border-radius) 0 0}.wysiwyg-toolbar .wysiwyg-toolbar-dropdown .wysiwyg-toolbar-dropdown-content button[data-command]:last-child{border-bottom:1px solid var(--wysiwyg-border-color);border-radius:0 0 var(--wysiwyg-border-radius) var(--wysiwyg-border-radius)}.wysiwyg-body{cursor:text;padding:10px;outline:none;white-space:pre-wrap;word-wrap:break-word;line-height:1.5;color:var(--wysiwyg-text-color);background-color:var(--wysiwyg-background-color);border:1px solid var(--wysiwyg-border-color);border-radius:var(--wysiwyg-border-radius);resize:vertical;font-weight:400;width:100%;display:inline-block;max-height:var(--wysiwyg-max-body-height);overflow:auto;img{width: 100%; height: 100%;} &.dragging {opacity: .6; position: relative; &::after {content: \"Upload\"; pointer-events: none; user-select: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 1.5em;}}}.wysiwyg-toolbar+.wysiwyg-body{border-top:none;border-radius:0 0 var(--wysiwyg-border-radius) var(--wysiwyg-border-radius)}")); document.head.appendChild(elementStyle);} catch(e) {console.error('vite-plugin-css-injected-by-js', e);} })();var p = Object.defineProperty;
+var h = (l, t, e) => t in l ? p(l, t, { enumerable: !0, configurable: !0, writable: !0, value: e }) : l[t] = e;
+var d = (l, t, e) => (h(l, typeof t != "symbol" ? t + "" : t, e), e);
+const i = {
   FIXED: "fixed",
   POPOVER: "popover",
   TOOLTIP: "tooltip"
@@ -12,17 +12,16 @@ class m {
    * @param {string} editorId The id of the editor element
    * @param {DisplayMode} mode The display mode of the editor
    */
-  constructor(t, e = s.FIXED) {
-    r(this, "_editor");
-    r(this, "_displayMode");
-    r(this, "_toolbar");
-    r(this, "_toolbarButtons");
-    r(this, "_body");
-    r(this, "_bodyIframe");
-    r(this, "_range");
-    if (this._editor = document.getElementById(t), !Object.values(s).includes(e))
+  constructor(t, e = i.FIXED) {
+    d(this, "_editor");
+    d(this, "_displayMode");
+    d(this, "_toolbar");
+    d(this, "_toolbarButtons");
+    d(this, "_body");
+    d(this, "_range");
+    if (!Object.values(i).includes(e))
       throw new Error("Invalid display mode, please use DisplayMode enum");
-    this._displayMode = e;
+    this._editor = document.getElementById(t), this._editor.classList.add("wysiwygeditor"), this._displayMode = e;
   }
   /**
    * @description Initialize the editor
@@ -38,7 +37,7 @@ class m {
    * @returns {void}
    */
   _createToolbar() {
-    this._displayMode == s.POPOVER || this._displayMode == s.TOOLTIP ? this._createDynamicToolbar() : this._createFixedToolbar(), this._toolbarButtons = this._toolbar.querySelectorAll("button[data-command]"), this._toolbarButtons.length > 0 && this._createToolbarButtons(), this._toolbar.querySelector(".wysiwyg-toolbar-dropdown") && this._createToolbarDropdowns();
+    this._displayMode == i.POPOVER || this._displayMode == i.TOOLTIP ? this._createDynamicToolbar() : this._createFixedToolbar(), this._toolbarButtons = this._toolbar.querySelectorAll("button[data-command]"), this._toolbarButtons.length > 0 && this._createToolbarButtons(), this._toolbar.querySelector(".wysiwyg-toolbar-dropdown") && this._createToolbarDropdowns();
   }
   /**
    * @private
@@ -155,7 +154,7 @@ class m {
                 </button>
             `;
     }
-    function i() {
+    function r() {
       return `
                 <button type="button" data-command="insertUnorderedList">
                     <span>UL</span>
@@ -165,7 +164,7 @@ class m {
                 </button>
             `;
     }
-    function l() {
+    function s() {
       return `
                 <div class="wysiwyg-toolbar-dropdown">
                     <div class="wysiwyg-toolbar-dropdown-toggle">
@@ -189,14 +188,14 @@ class m {
                 </div>
             `;
     }
-    function y() {
+    function u() {
       return `
                 <button type="button" data-command="insertImage">
                     <span>Image</span>
                 </button>
             `;
     }
-    function u() {
+    function y() {
       return `
                 <button type="button" data-command="unlink">
                     <span>Unlink</span>
@@ -229,13 +228,13 @@ class m {
             </div>
             <div class="wysiwyg-toolbar-group">
                 ${a()}
-                ${i()}
+                ${r()}
             </div>
             <div class="wysiwyg-toolbar-group">
-                ${l()}
+                ${s()}
                 ${c()}
-                ${y()}
                 ${u()}
+                ${y()}
             </div>
             <div class="wysiwyg-toolbar-group">
                 ${b()}
@@ -254,19 +253,19 @@ class m {
       e.length !== 0 && new Promise((o) => {
         let n = e.length;
         for (const a of e) {
-          const i = new FileReader();
-          i.onload = () => {
+          const r = new FileReader();
+          r.onload = () => {
             if (!this._range)
-              (this._bodyIframe || this._body).focus();
+              this._body.focus();
             else {
-              const l = window.getSelection();
-              l.removeAllRanges(), l.addRange(this._range);
+              const s = window.getSelection();
+              s.removeAllRanges(), s.addRange(this._range);
             }
-            (this._bodyIframe || document).execCommand("insertImage", !1, i.result), n--, n === 0 && o(e);
-          }, i.readAsDataURL(a);
+            document.execCommand("insertImage", !1, r.result), n--, n === 0 && o(e);
+          }, r.readAsDataURL(a);
         }
       }).then((o) => {
-        (this._bodyIframe || this._body).querySelectorAll("img").forEach((n, a) => {
+        this._body.querySelectorAll("img").forEach((n, a) => {
           n.style.width = "100%", n.addEventListener("mouseover", () => {
             n.title = o[a].name;
           });
@@ -282,7 +281,7 @@ class m {
   _createToolbarButtons() {
     this._toolbarButtons.forEach((e) => {
       e.getAttribute("type") || e.setAttribute("type", "button"), e.addEventListener("click", () => {
-        e.dataset.command.includes("justify") && this._toolbar.querySelectorAll('[data-command^="justify"]').forEach((o) => o.classList.remove("active")), (this._bodyIframe || document).execCommand(e.dataset.command, !1, e.dataset.value), e.classList.toggle("active"), (this._bodyIframe || this._body).focus();
+        e.dataset.command.includes("justify") && this._toolbar.querySelectorAll('[data-command^="justify"]').forEach((o) => o.classList.remove("active")), document.execCommand(e.dataset.command, !1, e.dataset.value), e.classList.toggle("active"), this._body.focus();
       });
     });
     const t = this._toolbar.querySelector('[data-command="insertImage"]');
@@ -306,8 +305,8 @@ class m {
     }), t.addEventListener("keypress", (a) => {
       if (a.key === "Enter") {
         a.preventDefault();
-        const i = window.getSelection();
-        this._range ? (i.removeAllRanges(), i.addRange(this._range)) : (this._bodyIframe || this._body).focus(), (this._bodyIframe || document).execCommand(e, !1, t.value), n && n(t);
+        const r = window.getSelection();
+        this._range ? (r.removeAllRanges(), r.addRange(this._range)) : this._body.focus(), document.execCommand(e, !1, t.value), n && n(t);
       }
     });
   }
@@ -328,11 +327,7 @@ class m {
         }), e.addEventListener("mouseover", () => {
           document.addEventListener("keydown", (n) => {
             n.ctrlKey && (e.style.cursor = "pointer");
-          }), this._bodyIframe && this._bodyIframe.addEventListener("keydown", (n) => {
-            n.ctrlKey && (e.style.cursor = "pointer");
           }), document.addEventListener("keyup", () => {
-            e.style.cursor = "text";
-          }), this._bodyIframe && this._bodyIframe.addEventListener("keyup", () => {
             e.style.cursor = "text";
           });
         }), e.addEventListener("mouseout", () => {
@@ -386,7 +381,7 @@ class m {
    * @returns {void}
    */
   _createBody() {
-    this._displayMode == s.POPOVER || this._displayMode == s.TOOLTIP ? this._createDynamicBody() : this._createFixedBody(), this._removeEmptyNodes(this._body), this._addBodyEvents();
+    this._displayMode == i.POPOVER || this._displayMode == i.TOOLTIP ? this._createDynamicBody() : this._createFixedBody(), this._removeEmptyNodes(this._body), this._addBodyEvents();
   }
   /**
    * @private
@@ -416,7 +411,7 @@ class m {
     document.addEventListener("selectionchange", (t) => {
       this._body === document.activeElement && (this._toolbarButtons.forEach((e) => {
         e.classList.toggle("active", document.queryCommandState(e.dataset.command));
-      }), this._displayMode == s.TOOLTIP && !this._toolbar.contains(t.target) && (document.getSelection().toString() === "" || document.getSelection().rangeCount === 0) && (this._toolbar.style.display = "none"));
+      }), this._displayMode == i.TOOLTIP && !this._toolbar.contains(t.target) && (document.getSelection().toString() === "" || document.getSelection().rangeCount === 0) && (this._toolbar.style.display = "none"));
     });
   }
   /**
@@ -463,7 +458,7 @@ class m {
   _insertLinkOnPasteEvent() {
     this._body.addEventListener("paste", (t) => {
       const e = t.clipboardData.getData("text");
-      e.match(/^https?:\/\/.+/) && ((this._bodyIframe || document).execCommand("createLink", !1, e), t.preventDefault(), this._body.querySelectorAll("a").forEach((o) => {
+      e.match(/^https?:\/\/.+/) && (document.execCommand("createLink", !1, e), t.preventDefault(), this._body.querySelectorAll("a").forEach((o) => {
         var n;
         o.target = "_blank", o.title = o.href, o.innerHTML = ((n = o.querySelector("span")) == null ? void 0 : n.innerHTML) || o.innerHTML, o.addEventListener("click", (a) => {
           a.ctrlKey && window.open(o.href, "_blank");
@@ -471,22 +466,6 @@ class m {
           document.addEventListener("keydown", (a) => {
             a.ctrlKey && (o.style.cursor = "pointer");
           }), document.addEventListener("keyup", () => {
-            o.style.cursor = "text";
-          });
-        }), o.addEventListener("mouseout", () => {
-          o.style.cursor = "text";
-        });
-      }));
-    }), this._bodyIframe.addEventListener("paste", (t) => {
-      const e = t.clipboardData.getData("text");
-      e.match(/^https?:\/\/.+/) && (this._bodyIframe.execCommand("createLink", !1, e), t.preventDefault(), this._bodyIframe.querySelectorAll("a").forEach((o) => {
-        var n;
-        o.target = "_blank", o.title = o.href, o.innerHTML = ((n = o.querySelector("span")) == null ? void 0 : n.innerHTML) || o.innerHTML, o.addEventListener("click", (a) => {
-          a.ctrlKey && window.open(o.href, "_blank");
-        }), o.addEventListener("mouseover", () => {
-          this._bodyIframe.addEventListener("keydown", (a) => {
-            a.ctrlKey && (o.style.cursor = "pointer");
-          }), this._bodyIframe.addEventListener("keyup", () => {
             o.style.cursor = "text";
           });
         }), o.addEventListener("mouseout", () => {
@@ -515,7 +494,7 @@ class m {
    * @returns {void}
    */
   _addBodyEvents() {
-    this._makeToolbarReactiveToSelection(), this._displayMode != s.FIXED && this._hideToolbarOnBlur(), this._displayMode == s.POPOVER && this._showToolbarOnFocus(), this._displayMode == s.TOOLTIP && this._showToolbarOnSelection(), this._insertLinkOnPasteEvent(), this._insertDragAndDropEffectEvent();
+    this._makeToolbarReactiveToSelection(), this._displayMode != i.FIXED && this._hideToolbarOnBlur(), this._displayMode == i.POPOVER && this._showToolbarOnFocus(), this._displayMode == i.TOOLTIP && this._showToolbarOnSelection(), this._insertLinkOnPasteEvent(), this._insertDragAndDropEffectEvent();
   }
   /**
    * @private
@@ -540,29 +519,30 @@ class m {
    * @returns {string}
    */
   getHTMLContent() {
-    var e;
-    const t = (e = this._body.querySelector("iframe")) == null ? void 0 : e.contentWindow.document.body.outerHTML;
-    return this._body.innerHTML.replace("<iframe>", "").replace("</iframe>", "") + (t ? "<iframe>" + t + "</iframe>" : "");
+    return this._body.innerHTML;
   }
   /**
-   * @description Set the text content of the body(override the existing content)
-   * @param {string} text The text content to be set
-   * @example editor.setTextContent('Hello World');
+   * @description Adds sanitized HTML content to the editor's body.
+   *              - Extracts only the <body> content if available, otherwise uses full HTML.
+   *              - Removes all security-sensitive elements and attributes.
+   * @param {string} html The full HTML content to be added
+   * @example editor.addFullHTMLPage('<html><body><p>Hello World</p></body></html>');
    * @returns {void}
    */
-  setTextContent(t) {
-    this._body.innerText = t;
-  }
-  /**
-   * @description Set the content of the body(override the existing content)
-   * @param {string} text The content to be set
-   * @example editor.setHTMLContent('<p>Hello World</p>');
-   * @example editor.setHTMLContent('Hello World');
-   * @returns {void}
-   */
-  setHTMLContent(t) {
-    let e = document.createElement("iframe");
-    this._body.appendChild(document.createElement("br")), this._body.appendChild(e), this._bodyIframe = e.contentWindow ? e.contentWindow.document : e.document, this._bodyIframe.open(), this._bodyIframe.writeln(t), this._bodyIframe.close(), this._body.style.height = this._bodyIframe.body.scrollHeight + "px", this._bodyIframe.designMode = "on";
+  addFullHTMLPage(t) {
+    const e = document.createElement("div"), n = new DOMParser().parseFromString(t, "text/html");
+    let a = "";
+    a += n.body ? n.body.getAttribute("style") : "", e.setAttribute("style", a), n.querySelectorAll(`
+            script, style, link, meta, iframe, object, embed,
+            form, input, button, textarea, select, option,
+            noscript, svg, math
+        `).forEach((s) => s.remove()), n.querySelectorAll("*").forEach((s) => {
+      for (const c of [...s.attributes])
+        c.name.startsWith("on") && s.removeAttribute(c.name);
+      s.hasAttribute("href") && s.getAttribute("href").startsWith("javascript:") && s.removeAttribute("href"), s.hasAttribute("src") && s.getAttribute("src").startsWith("javascript:") && s.removeAttribute("src");
+    });
+    const r = n.body ? n.body.innerHTML : n.documentElement.innerHTML;
+    e.innerHTML = r, this._body.appendChild(document.createElement("br")), this._body.appendChild(e);
   }
   /**
    * @description Clear the content of the body
@@ -591,8 +571,8 @@ class m {
     });
   }
 }
-typeof window < "u" && (window.WYSIWYGEditor = m, window.DisplayMode = s);
+typeof window < "u" && (window.WYSIWYGEditor = m, window.DisplayMode = i);
 export {
-  s as DisplayMode,
+  i as DisplayMode,
   m as WYSIWYGEditor
 };
