@@ -123,22 +123,6 @@ wysiwygeditor.init();
         <td>Get the content of the body's innerHTML.</td>
     </tr>
     <tr>
-        <td>setHTMLContent(content: string)</td>
-        <td>Set the content of the body's innerHTML.</td>
-    </tr>
-    <tr>
-        <td>setTextContent(content: string)</td>
-        <td>Set the content of the body's innerText.</td>
-    </tr>
-    <tr>
-        <td>addHTMLContent(content: string)</td>
-        <td>Add content to the body's innerHTML.</td>
-    </tr>
-    <tr>
-        <td>addTextContent(content: string)</td>
-        <td>Add content to the body's innerText.</td>
-    </tr>
-    <tr>
         <td>addFullHTMLPage(content: string):</td>
         <td>Add full HTML page to the editor(this will be added inside the iframe tag)</td>
     </tr>
