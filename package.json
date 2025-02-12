@@ -1,6 +1,6 @@
 {
   "name": "@bberkay/wysiwygeditor",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Simple, lightweight, easy to use and easy to customize WYSIWYG Editor. ",
   "main": "dist/wysiwygeditor.umd.js",
   "module": "dist/wysiwygeditor.es.js",
