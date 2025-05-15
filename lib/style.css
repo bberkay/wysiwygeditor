@@ -69,6 +69,8 @@
         & input[data-command]{
             text-align: start;
             cursor: text;
+            width: 250px;
+            margin-top: 1px;
         }
 
         & button[data-command]{
@@ -91,7 +93,7 @@
         display: inline-block;
 
         & .wysiwyg-toolbar-dropdown-toggle{
-            width: 90px;
+            width: 120px;
             text-align: start;
 
             &:hover{
